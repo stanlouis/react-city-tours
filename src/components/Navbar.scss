@@ -1,0 +1,25 @@
+@import '../index.scss';
+
+.navbar {
+  background: $mainBlack;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  color: $mainGrey !important;
+  &:hover {
+    color: $mainGreen !important;
+  }
+}
+
+.navbar-nav,
+.mr-auto {
+  flex: 1;
+  margin: auto 150px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-nav li > a:focus {
+  color: $mainGreen !important;
+}

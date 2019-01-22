@@ -4,24 +4,22 @@ import logo from '../../logo.png';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-dark">
-      <a href="#home" className="navbar-brand">
-        <img src={logo} alt="logo" />
-      </a>
-      <ul className="navbar-nav">
-        <li className="nav-item active">
-          <a className="nav-link" href="#home">
-            Home <span className="sr-only">(current)</span>
+    <nav className="navbar">
+      <img src={logo} alt="city tours logo" />
+      <ul className="nav-links">
+        <li>
+          <a href="/" className="nav-link">
+            home
           </a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#about">
-            About
+        <li>
+          <a href="/" className="nav-link">
+            about
           </a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#tours">
-            Tours
+        <li>
+          <a href="/" className="nav-link active">
+            tours
           </a>
         </li>
       </ul>

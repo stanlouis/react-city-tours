@@ -2,24 +2,29 @@
 
 .navbar {
   background: $mainBlack;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-self: center;
+  text-align: center;
+  list-style-type: none;
 }
 
 .nav-link {
-  font-size: 1.2rem;
-  color: $mainGrey !important;
+  color: $mainGrey;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1.2arem;
+  transition: all 0.3s linear;
   &:hover {
-    color: $mainGreen !important;
+    color: $mainGreen;
   }
 }
-
-.navbar-nav,
-.mr-auto {
-  flex: 1;
-  margin: auto 150px !important;
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar-nav li > a:focus {
-  color: $mainGreen !important;
+.active {
+  color: $mainGreen;
 }
